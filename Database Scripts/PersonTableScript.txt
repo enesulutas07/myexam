@@ -1,0 +1,22 @@
+
+CREATE TABLE public.person (
+	"name" varchar NULL,
+	surname varchar NULL,
+	phone varchar NULL,
+	adress varchar NULL,
+	bloodgroup varchar NULL,
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	CONSTRAINT person_pkey PRIMARY KEY (id)
+);
+
+INSERT INTO public.person
+("name", surname, phone, adress, bloodgroup)
+VALUES('Enes', 'Ulutaş', '05433217543', 'kumluca/antalya', '0 Rh+');
+
+INSERT INTO public.person
+("name", surname, phone, adress, bloodgroup)
+VALUES('Seher', 'Ulutaş', '05432227766', 'kumluca/antalya', '0 Rh-');
+
+INSERT INTO public.person
+("name", surname, phone, adress, bloodgroup)
+VALUES('Enes', 'Ulutaş', '08889992244', 'Ataşehir/İstanbul', 'A Rh-');
